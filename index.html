@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bercanda</title>
+    <!-- Tailwind CSS -->
+    <link href="/src/styles/output.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#FA6A74]">
+    <nav class="bg-[#1A1C22] py-4">
+      <div class="text-white flex justify-between items-center mx-10 font-bold">
+        <p>
+          Jokes Bapak-Bapak Generator
+          <i class="fa-regular fa-face-laugh-beam"></i>
+        </p>
+        <a
+          href="https://portfolio.fazrilnugraha.my.id"
+          target="_blank"
+          class="bg-[#FFE479] text-black py-2 px-2"
+        >
+          Portfolio
+        </a>
+      </div>
+    </nav>
+
+    <main class="flex justify-center items-center h-screen">
+      <div class="relative">
+        <div class="flex justify-evenly">
+          <button
+            id="btn"
+            type="submit"
+            class="flex justify-center items-center gap-2 bg-[#CA1622] py-2 px-2 text-white border-4 border-black mb-4 hover:bg-[#f35865]"
+          >
+            <i class="fa-regular fa-face-laugh-squint"></i> Kasih Joke
+          </button>
+          <button
+            id="btn"
+            type="submit"
+            class="flex justify-center items-center gap-2 bg-[#1F4290] py-2 px-2 text-white border-4 border-black mb-4 hover:bg-[#4c7de6]"
+          >
+            <i class="fa-regular fa-copy"></i> Salin Joke
+          </button>
+        </div>
+        <div class="card-joke">
+          <div
+            class="bg-white relative z-10 w-[440px] h-36 px-2 py-3 border-4 font-semibold flex text-center items-center justify-center text-lg border-black"
+          >
+            <span id="jokePlace"><i>joke lo di sini...</i></span>
+          </div>
+          <!-- Shadow -->
+          <div
+            class="bg-black absolute top-20 left-3 w-[440px] h-36 px-2 py-2 border-4 font-semibold flex text-center items-center justify-center text-lg border-black"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-[#1A1C22] py-6">
+      <div class="text-white text-center">
+        Thank's to
+        <a
+          href="https://github.com/ardhptr21/candaan-api?tab=readme-ov-file"
+          target="_blank"
+          class="text-blue-400 underline"
+        >
+          ardhptr21
+        </a>
+        for the Candaan API <i class="fa-regular fa-face-laugh-wink"></i>
+      </div>
+
+      <div class="text-white text-center mt-4">
+        <i class="fa-regular fa-copyright"></i> Fazril Arief Nugraha - 2024
+      </div>
+    </footer>
+    <script src="/src/scripts/app.js"></script>
+  </body>
+</html>
