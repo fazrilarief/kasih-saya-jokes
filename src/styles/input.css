@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Comic Neue", cursive;
+}
 .solid-shadow {
   box-shadow: 10px 10px 0px black;
 }

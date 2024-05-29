@@ -599,6 +599,14 @@ video {
   width: 100%;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -719,6 +727,10 @@ video {
   text-decoration-line: underline;
 }
 
+body {
+  font-family: "Comic Neue", cursive;
+}
+
 .solid-shadow {
   box-shadow: 10px 10px 0px black;
 }
@@ -748,10 +760,6 @@ video {
   }
 }
 
-.hover\:w-32:hover {
-  width: 8rem;
-}
-
 .hover\:bg-\[\#4c7de6\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(76 125 230 / var(--tw-bg-opacity));
@@ -765,5 +773,22 @@ video {
 @media (min-width: 640px) {
   .sm\:w-\[440px\] {
     width: 440px;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sm\:hover\:w-32:hover {
+    width: 8rem;
   }
 }

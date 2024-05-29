@@ -12,6 +12,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-[#FA6A74]">
     <nav class="bg-[#1A1C22] py-4">
@@ -31,18 +39,19 @@
     </nav>
 
     <main class="flex justify-center items-center h-screen">
-      <div class="relative">
-        <div class="flex justify-evenly font-semibold mb-3">
+      <div class="relative w-full max-w-md px-2 sm:px-0">
+        <div class="flex justify-evenly sm:flex-row flex-col font-bold mb-3">
           <button
             id="btn"
             type="submit"
-            class="solid-shadow-btn flex justify-center items-center gap-2 bg-[#CA1622] py-2 px-2 text-white border-4 border-black mb-4 hover:bg-[#f35865] hover:w-32"
+            class="solid-shadow-btn flex justify-center items-center gap-2 bg-[#CA1622] py-2 px-2 text-white border-4 border-black mb-4 hover:bg-[#f35865] sm:hover:w-32 w-full sm:w-auto"
           >
             <i class="far fa-laugh-squint"></i> Kasih Joke
           </button>
           <button
             id="btn"
             type="submit"
+            onclick="return alert('Masih dikembangin ngab')"
             class="solid-shadow-btn flex justify-center items-center gap-2 bg-[#1F4290] py-2 px-2 text-white border-4 border-black mb-4 hover:bg-[#4c7de6]"
           >
             <i class="far fa-copy"></i> Srikinsyut
@@ -50,7 +59,7 @@
         </div>
         <div class="card-joke">
           <div
-            class="solid-shadow bg-white relative z-10 w-full sm:w-[440px] h-36 px-2 py-3 border-4 font-semibold flex text-center items-center justify-center text-lg border-black"
+            class="solid-shadow bg-white relative z-10 w-full sm:w-[440px] h-36 px-2 py-3 border-4 font-bold flex text-center items-center justify-center text-lg border-black"
           >
             <span id="jokePlace"></span>
             <div class="absolute z-10 loader custom-loader hidden-loader"></div>
@@ -60,7 +69,7 @@
     </main>
 
     <footer class="bg-[#1A1C22] py-6">
-      <div class="text-white text-center">
+      <div class="text-white text-center font-bold">
         Thank's to
         <a
           href="https://github.com/ardhptr21/candaan-api?tab=readme-ov-file"
@@ -72,7 +81,7 @@
         for the Candaan API <i class="far fa-laugh-wink"></i>
       </div>
 
-      <div class="text-white text-center mt-4">
+      <div class="text-white text-center mt-4 font-bold">
         <i class="far fa-copyright"></i> Fazril Arief Nugraha - 2024
       </div>
     </footer>
